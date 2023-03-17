@@ -39,7 +39,7 @@ export default function RecentJournalEntry({entryData}){
     return(
         <View className="bg-black rounded-lg my-8">
             <Image 
-                source={{uri: imageData}}
+                source={{uri: 'https://images.unsplash.com/photo-1622512272112-adeced423785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80'}}
                 className="block absolute max-h-full max-w-full min-h-full min-w-full h-full w-full opacity-25 aspect-square"
             />
             <Text className="text-4xl text-white my-8 px-8 z-10">{entryData[latestJournal].quote}</Text>

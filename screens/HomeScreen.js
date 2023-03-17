@@ -4,7 +4,6 @@ import RecentJournalEntry from "../components/RecentJournalEntry";
 import PreviousJournalEntry from "../components/PreviousJournalEntry";
 
 import { getAllJournalEntry } from "../data/journal-entries-data";
-import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
 export default function HomeScreen(){
     const renderItem = ({item}) => (
