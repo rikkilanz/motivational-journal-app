@@ -2,7 +2,6 @@ export function getAllJournalEntry(){
     return JOURNALENTRIES;
 }
 
-
 export const JOURNALENTRIES = [
     {
         id: '001',

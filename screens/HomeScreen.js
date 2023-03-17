@@ -4,18 +4,19 @@ import RecentJournalEntry from "../components/RecentJournalEntry";
 import PreviousJournalEntry from "../components/PreviousJournalEntry";
 
 import { getAllJournalEntry } from "../data/journal-entries-data";
+import { get } from "react-native/Libraries/TurboModule/TurboModuleRegistry";
 
 export default function HomeScreen(){
-    const renderItem = ({data}) => (
-        <PreviousJournalEntry data={data} />
+    const renderItem = ({item}) => (
+        <PreviousJournalEntry entryData={item} />
     )
     return(
-        <ScrollView className="flex flex-col bg-white px-8">
-            <RecentJournalEntry />
+        <ScrollView className="flex flex-col bg-black px-8">
+            <RecentJournalEntry entryData={getAllJournalEntry()} />
             <FlatList
                 data={getAllJournalEntry()}
                 renderItem={renderItem}
-                keyExtractor={data => data.id}
+                keyExtractor={item => item.id}
             />
         </ScrollView>
     )

@@ -1,13 +1,11 @@
 import { View, Text, Image } from "react-native";
 
-export default function PreviousJournalEntry({data}){
-    console.log({data})
+export default function PreviousJournalEntry({entryData}){
     return(
-        <View className="bg-black rounded-lg my h-32 p-8">
-            {/* <Text className="text-white">{data.quote}</Text> */}
-            <Text className="text-white">Quote</Text>
-            <Text className="text-white">Entry</Text>
-            <Text className="text-white">Date</Text>
+        <View className="bg-white rounded-lg my-2 p-8">
+            <Text className="text-black text-base truncate">{entryData.quote}</Text>
+            <Text className="text-black text-sm my-2">{entryData.journalEntry}</Text>
+            <Text className="text-black text-xs">{entryData.date}</Text>
         </View>
     )
 }
