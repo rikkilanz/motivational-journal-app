@@ -6,6 +6,7 @@ import { View, Text, Image, TextInput } from "react-native";
 export default function EntryScreen(){
     const [error, setError] = useState(null);
     const [data, setData] = useState([]);
+    const [isLoaded, isLoading] = useState(false);
 
     //Fetch data from API
 
