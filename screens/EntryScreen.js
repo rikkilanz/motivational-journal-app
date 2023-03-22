@@ -68,7 +68,7 @@ export default function EntryScreen(){
                 <TextInput 
                     placeholder={questionPrompt}
                     placeholderTextColor='gray'
-                    className="w-full text-white"
+                    className="w-full text-white mt-[150px]"
                     multiline={true}
                 />
             </View>
