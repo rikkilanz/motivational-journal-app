@@ -18,7 +18,9 @@ export default function EntryScreen(){
         .then(
             (result) => {
                 setData(result)
-            }, 
+            }
+        )
+        .catch(
             (error) => {
                 setError(error)
             }
@@ -51,7 +53,7 @@ export default function EntryScreen(){
             questionPrompt = 'How do you feel about the message?'
     }
 
-    if(loading){
+    if(data.length === 0 || loading){
         return(
             <View className='flex grow bg-[#010203] items-center justify-center'>
                 <ActivityIndicator size="large" color="white"/>

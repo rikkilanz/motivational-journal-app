@@ -18,7 +18,9 @@ export default function TimerScreen(){
         .then(
             (result) => {
                 setData(result)
-            }, 
+            }
+        )
+        .catch(
             (error) => {
                 setError(error)
             }
@@ -28,7 +30,7 @@ export default function TimerScreen(){
         )
     }, []);
 
-    if(loading){
+    if(data.length === 0 || loading){
         return(
             <View className='flex grow bg-[#010203] items-center justify-center'>
                 <ActivityIndicator size="large" color="white"/>
