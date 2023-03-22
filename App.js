@@ -26,9 +26,6 @@ export default function App() {
     //If open app, go entry
     return (
       LoadMainScreen()
-      // <View>
-      //   <Text style={{fontFamily: 'Baskervville'}}>Text</Text>
-      // </View>
     )
     // then switch state of the screen to home screen
     //If home screen, it would have the navigator and everything so technically you display navigation container?
